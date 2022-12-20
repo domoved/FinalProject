@@ -10,7 +10,7 @@ public class Main {
         String sqlitePath = "jdbc:sqlite:src/resources/Forbes.sqlite";
         CSVParser parser = new CSVParser(csvPath);
         SQLite sqlite = new SQLite(sqlitePath);
-        File file = new File("H:\\Programs\\Java\\FinalProject\\src\\resources\\Forbes.csv");
+        File file = new File("src\\resources\\Forbes.sqlite");
 
         if (!file.exists()){
             SQLite.createAndFillTable(parser, sqlite);
