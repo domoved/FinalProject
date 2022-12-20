@@ -4,35 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="42726bce-87d8-48e5-815e-f37b1b9f3453" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/jfreechart_demo_1_5_2_jar_with_dependencies.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/opencsv.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/sqlite_jdbc_3_20_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/FinalProject.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jfreechart-1.5.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/jfreechart-demo-1.5.2-jar-with-dependencies.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/opencsv/commons-beanutils-1.9.3.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/opencsv/commons-collections-3.2.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/opencsv/commons-lang3-3.6.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/opencsv/commons-logging-1.2.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/opencsv/commons-text-1.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/opencsv/opencsv-4.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/sqlite-jdbc-3.20.1.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/forbes/CSVParser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/forbes/Forbes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/forbes/Plot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/forbes/SQLLite.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/forbes/Tasks.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/Forbes.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/forbes.sqlite" afterDir="false" />
+    <list default="true" id="42726bce-87d8-48e5-815e-f37b1b9f3453" name="Changes" comment="Fixed bugs in program, shortcomings in code, etc.">
+      <change afterPath="$PROJECT_DIR$/screens/first_task.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screens/second_task.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/screens/third_task.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/jfreechart-1.5.3.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/forbes/CSVParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/forbes/CSVParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/forbes/Forbes.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/forbes/Forbes.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/forbes/Plot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/forbes/Plot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/forbes/SQLLite.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/forbes/SQLite.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/forbes/Tasks.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/forbes/Tasks.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/Forbes.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/Forbes.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/forbes.sqlite" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/Forbes.sqlite" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,6 +84,14 @@
       <option name="presentableId" value="Default" />
       <updated>1671375628477</updated>
     </task>
+    <task id="LOCAL-00001" summary="Первая работспособная версия программы">
+      <created>1671530705724</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1671530705724</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -141,6 +134,11 @@
         <entry key="899879f2-af51-43ff-9a0f-8bc2a1438438" value="TOOL_WINDOW" />
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Первая работспособная версия программы" />
+    <MESSAGE value="Fixed bugs in program, shortcomings in code, etc." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed bugs in program, shortcomings in code, etc." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

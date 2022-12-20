@@ -6,14 +6,13 @@ import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Map;
 
-import static forbes.SQLLite.statement;
-
 public class Tasks {
-    public static void firstTask() throws SQLException {
+    public static void solveFirstTask() throws SQLException {
         Map<String, Float> countryCapital = new HashMap<>();
-        ResultSet resultSet = statement.executeQuery( "" + "SELECT DISTINCT country, SUM(networth) AS capital " +
+        String request = "SELECT DISTINCT country, SUM(networth) AS capital " +
                 "FROM Forbes " +
-                "GROUP BY country;");
+                "GROUP BY country;";
+        ResultSet resultSet = forbes.SQLite.statement.executeQuery(request);
         while (resultSet.next()){
             countryCapital.put(
                     resultSet.getString("country"),
@@ -26,30 +25,29 @@ public class Tasks {
             plot.setVisible(true);
         });
     }
-    public static void secondTask() throws SQLException {
-        System.out.println(String.format(
-                "Самый молодой миллиардер из Франции, капитал которого превышает 10 млрд - %s\n",
-                statement.executeQuery("" +
-                        "SELECT name, MIN(age) " +
-                        "FROM Forbes " +
-                        "WHERE country == 'France' " +
-                        "    and networth > 10;").getString("name"))
-        );
+    public static void solveSecondTask() throws SQLException {
+        String request = "SELECT name, MIN(age) " +
+                "FROM Forbes " +
+                "WHERE country == 'France' " +
+                "    and networth > 10;";
+        System.out.printf(
+                "Второе задание%nСамый молодой миллиардер из Франции, капитал которого превышает 10 млрд - %s.\n%n",
+                SQLite.statement.executeQuery(request).getString("name"));
     }
 
-    public static void thirdTask() throws SQLException {
-        System.out.println(String.format(
-                "%s из компании %s - бизнесмен из США, имеющий самый большой капитал в сфере Energy.\n",
-                statement.executeQuery("" +
-                        "SELECT name, MAX(networth) " +
-                        "FROM Forbes " +
-                        "WHERE country == 'United States' " +
-                        "    and industry == 'Energy';").getString("name"),
-                statement.executeQuery("" +
-                        "SELECT source, MAX(networth) " +
-                        "FROM Forbes " +
-                        "WHERE country == 'United States' " +
-                        "    and industry == 'Energy';").getString("source"))
+    public static void solveThirdTask() throws SQLException {
+        String firstRequest = "SELECT name, MAX(networth) " +
+                "FROM Forbes " +
+                "WHERE country == 'United States' " +
+                "    and industry == 'Energy';";
+        String secondRequest = "SELECT source, MAX(networth) " +
+                "FROM Forbes " +
+                "WHERE country == 'United States' " +
+                "    and industry == 'Energy';";
+        System.out.printf(
+                "Третье задание%n%s из компании %s - бизнесмен из США, имеющий самый большой капитал в сфере Energy.",
+                forbes.SQLite.statement.executeQuery(firstRequest).getString("name"),
+                forbes.SQLite.statement.executeQuery(secondRequest).getString("source")
         );
     }
 }

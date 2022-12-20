@@ -1,6 +1,5 @@
 package forbes;
 
-import java.awt.Color;
 import java.util.Map;
 import javax.swing.JFrame;
 import org.jfree.chart.ChartFactory;
@@ -10,10 +9,17 @@ import org.jfree.chart.plot.PlotOrientation;
 import org.jfree.data.category.CategoryDataset;
 import org.jfree.data.category.DefaultCategoryDataset;
 
-
 public class Plot extends JFrame {
-    public Plot(Map<String, Float> amounts) {
-        Plotting(amounts);
+    public Plot(Map<String, Float> sum) {
+        Plotting(sum);
+    }
+
+    private void Plotting(Map<String, Float> capital) {
+        CategoryDataset dataset = createDataset(capital);
+        JFreeChart chart = createChart(dataset);
+        ChartPanel chartPanel = new ChartPanel(chart);
+        add(chartPanel);
+        pack();
     }
 
     private CategoryDataset createDataset(Map<String, Float> capitals) {
@@ -30,13 +36,5 @@ public class Plot extends JFrame {
                 ds,
                 PlotOrientation.HORIZONTAL,
                 false, true, true);
-    }
-    private void Plotting(Map<String, Float> capital) {
-        CategoryDataset dataset = createDataset(capital);
-        JFreeChart chart = createChart(dataset);
-        ChartPanel chartPanel = new ChartPanel(chart);
-        chartPanel.setBackground(Color.white);
-        add(chartPanel);
-        pack();
     }
 }
